@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/notes/static/css/main.7c8fee48.chunk.css",
+    "main.css": "/notes/static/css/main.da0f9b0b.chunk.css",
     "main.js": "/notes/static/js/main.46df8505.chunk.js",
     "main.js.map": "/notes/static/js/main.46df8505.chunk.js.map",
     "runtime-main.js": "/notes/static/js/runtime-main.f970c6cb.js",
@@ -10,7 +10,7 @@
     "static/js/3.f566668a.chunk.js": "/notes/static/js/3.f566668a.chunk.js",
     "static/js/3.f566668a.chunk.js.map": "/notes/static/js/3.f566668a.chunk.js.map",
     "index.html": "/notes/index.html",
-    "static/css/main.7c8fee48.chunk.css.map": "/notes/static/css/main.7c8fee48.chunk.css.map",
+    "static/css/main.da0f9b0b.chunk.css.map": "/notes/static/css/main.da0f9b0b.chunk.css.map",
     "static/js/2.ed7d0cf9.chunk.js.LICENSE.txt": "/notes/static/js/2.ed7d0cf9.chunk.js.LICENSE.txt",
     "static/media/238482300080212.6abfb256.png": "/notes/static/media/238482300080212.6abfb256.png",
     "static/media/index.css": "/notes/static/media/Blackboard2.3ddc63cd.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.f970c6cb.js",
     "static/js/2.ed7d0cf9.chunk.js",
-    "static/css/main.7c8fee48.chunk.css",
+    "static/css/main.da0f9b0b.chunk.css",
     "static/js/main.46df8505.chunk.js"
   ]
 }
