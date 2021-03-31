@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.todos {
+    position: absolute;
+    margin-top: -205px;
+    margin-left: 6vw;
+}
+
+.enter {
+    text-align: center;
+}
+
+.wide {
+    overflow: hidden;
+}
+
+.enter input {
+    text-align: center;
+    border-radius: 10px;
+    width: 80vw;
+}
+
+.enter button {
+    display: inline;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+textarea {
+    font-family: 'Dancing Script', cursive;
+    border-radius: 10px;
+}
+
+input {
+    font-family: 'Dancing Script', cursive;
+}
+.todos textarea {
+    background-color: transparent;
+    border-color:transparent;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+}
+
+.close {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    font-size: 56px;
+}
+
+.block{
+    position:absolute;
+    display:none;
+    margin-left: 175px;
+    margin-top: -215px;
+    color: red;
+}
+.notes:hover .block{
+    display:block;
+}
+
+.notes img {
+    margin-top: 40px;
+    margin-left: 5vw;
+    object-fit: cover;
+    height:250px;
+}
+
+.btn-grd-primary {
+    background-size: 200% auto;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.btn-grd-primary:hover {;
+    background-position: right center;
+}
+
+.btn-grd-primary.hor-grd {
+    background-size: auto 200%;
+}
+
+.btn-grd-primary.hor-grd:hover {
+    background-position: bottom center;
+}
+
+.btn-grd-primary {
+    background-image: -webkit-gradient(linear, left top, right top, from(#77aaff), color-stop(51%, #0764ff), to(#77aaff));
+    background-image: linear-gradient(to right, #77aaff 0%, #0764ff 51%, #77aaff 100%);
+}
+.btn-grd-primary.hor-grd {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#77aaff), color-stop(51%, #0764ff), to(#77aaff));
+    background-image: linear-gradient(to top, #77aaff 0%, #0764ff 51%, #77aaff 100%);
+}
+

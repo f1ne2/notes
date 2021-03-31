@@ -1,14 +1,16 @@
 import React from "react";
+import form from "./form.css";
+import backGround from "./238482300080212.png";
+
 
 class NameForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {value: '',
-            idDel: ''};
+        remove: ''};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleClick = this.handleClick.bind(this);
-        this.deleteChange = this.deleteChange.bind(this);
+        this.removeClick = this.removeClick.bind(this);
         this.notes = [];
     }
 
@@ -21,13 +23,17 @@ class NameForm extends React.Component {
         this.setState({value: ""});
 
     }
-    deleteChange(event) {    this.setState({idDel: event.target.value})  }
-    handleClick(event) {
-        alert('Deleted: ' + this.state.idDel);
-        let d = localStorage.key(this.state.idDel);
-        localStorage.removeItem(String(d))
-        new NameForm().this.render()
-        event.preventDefault();
+
+    removeClick(item) {
+        for (let i=0; i<=this.res.length-1; i++) {
+            if (this.res[i].props.children === item.props.children) {
+                let del = localStorage.key(i);
+                alert (localStorage.getItem(del) + "Removed")
+                localStorage.removeItem(String(del));
+                this.res.splice(i)
+            }
+        }
+        this.setState({value: ""})
     }
 
     render() {
@@ -39,27 +45,30 @@ class NameForm extends React.Component {
         this.res.pop()
         return (
             <div>
-            <form onSubmit={this.handleSubmit}>
+                <div id="wide">
+            <form className="enter" onSubmit={this.handleSubmit}>
                 <label>
-                    <textarea placeholder="Enter Note" rows="5" wrap="hard" cols="22" required="True"
+                    <input placeholder="Enter Note" required="True"
                               value={this.state.value}
                               onChange={this.handleChange} /></label>
-                <br/>
-                <button type="submit" className="btn btn-primary">Add note</button>
+                <button type="submit" className="btn waves-effect waves-light btn-grd-primary ">Add note</button>
             </form>
-            <form onSubmit={this.handleClick}>
-                <label>
-                    <input type="text" placeholder="Enter ID" size={6} required="True" value={this.state.idDel}
-                           onChange={this.deleteChange} />
-                </label>
-                <button type="submit" className="btn btn-dark">Delete</button>
-            </form>
+                </div>
             <div className="container-fluid">
             <div className="row">
                 {this.res.map(todo => {
                 return (<div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div style={{backgroundColor: '#E0FFFF'}}>
-                    ID={this.res.indexOf(todo)}{todo} </div><div style={{backgroundColor: '#FFFFFF'}}><br/></div>
+                    <div className="notes">
+                        <img src={backGround} className="img-fluid" />
+                        <div className="todos"><textarea rows="5" cols="10"
+                                                         value={localStorage.getItem(localStorage.key(this.res.indexOf(todo)))}/>
+                        </div>
+                        <div className="block">
+                            <button type="button" className="close" onClick={() =>
+                                this.removeClick(todo)}>&times; remove
+                            </button>
+                        </div>
+                    </div>
                 </div>)})}
                 </div>
             </div>
