@@ -60,7 +60,7 @@ class NameForm extends React.Component {
                 return (<div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div className="notes">
                         <img src={backGround} className="img-fluid" />
-                        <div className="todos"><textarea rows="5" cols="10"
+                        <div className="todos"><textarea rows="5" cols="11"
                                                          value={localStorage.getItem(localStorage.key(this.res.indexOf(todo)))}/>
                         </div>
                         <div className="block">
