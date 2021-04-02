@@ -82,7 +82,7 @@ function NoteStructure(props) {
             <div className="row" >
                 {props.res.map(todo => {
                     return (<div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="notes">
+                            <div className="notes">
                             <div className="todos"><textarea rows="5" cols="12" value={localStorage.getItem
                             (localStorage.key(props.res.indexOf(todo)))}/>
                             </div>
@@ -92,17 +92,8 @@ function NoteStructure(props) {
                                 </button>
                             </div>
                         </div>
-                    </div>)})}
+                        </div>)})}
             </div>
         </div>
-
     </div>);
-}
-
-
-function randColor() {
-    var r = Math.floor(Math.random() * (256)),
-        g = Math.floor(Math.random() * (256)),
-        b = Math.floor(Math.random() * (256));
-    return '#' + r.toString(16) + g.toString(16) + b.toString(16);
 }
