@@ -44,7 +44,7 @@ class Clock extends Component {
     render() {
         return <p className="App-clock">{this.getFormat()} <br/>
                 <span>{this.state.time}</span>
-              </p>;
+               </p>;
     }
 }
 

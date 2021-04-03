@@ -10,28 +10,26 @@
     height: auto;
     min-height: 100%;
     margin: 0 auto;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-bottom-right-radius: 40%;
     border-bottom-left-radius: 40%;
 }
 
 .main-container {
-    background-color:blue;
     width: auto;
     height:auto;
     min-height: 100%;
     margin: 0 auto;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    border-radius: 8px;
+    background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 5%),
+    url(https://s7.postimg.org/yap5ueygr/back.png);
 }
 
 .top {
+
+    opacity: 0.9;
     height: 150px;
-    background: linear-gradient(to bottom, rgba(131, 56, 236, 0.8) 0%, rgba(131, 56, 236, 0.6) 100%), url(https://s7.postimg.org/yap5ueygr/back.png);
     position: relative;
-    border-radius: 0 0 100% 100%;
     width: 140%;
     margin-left: -20%;
     z-index: 2;
@@ -92,6 +90,7 @@
     transition: border 0.3s;
     width: 100%;
     border:none;
+    margin-top: 20px;
     color: #939CA7;
 }
 
@@ -100,12 +99,12 @@
 }
 
 .todos textarea {
-    opacity: 0.7; /* Полупрозрачный фон */
-    filter: alpha(Opacity=70);
+    background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+    url(https://s7.postimg.org/yap5ueygr/back.png);
+    opacity: 0.9;
     border-radius: 10%;
-    background-color: blue;
     border-color:transparent;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     color: white;
 }
