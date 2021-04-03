@@ -11,7 +11,6 @@ class NameForm extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.removeClick = this.removeClick.bind(this);
-      this.s = ""
     }
 
     handleChange(event) {
@@ -44,12 +43,15 @@ class NameForm extends React.Component {
         this.res.push(<div>{note}</div> );
         }
       this.res.pop();
+      if (this.res.length > 1)
+          this.s = "s";
+      else
+          this.s = "";
     };
+
 
     render() {
       this.getResult()
-        if (this.res.length > 1)
-            this.s = "s"
       return (
         <div>
           <div className="wide">
