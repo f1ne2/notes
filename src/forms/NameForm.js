@@ -1,31 +1,28 @@
 import React from "react";
 import form from "./form.css";
 import Clock from "./Clock";
-import TodoList from "./TodoList";
+import Todo from "./Todo";
 
 
 class NameForm extends React.Component {
     constructor(props) {
       super(props);
       this.state = {value: '', remove: ''};
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-      this.removeClick = this.removeClick.bind(this);
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
       this.setState({value: event.target.value});
 
     }
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
       event.preventDefault();
       if (this.state.value !== "") {
         localStorage.setItem(String(Date.now()), this.state.value);
         this.setState({value: ""})
     }}
 
-    removeClick(item) {
+    removeClick = (item) => {
       for (let i=0; i<=this.res.length-1; i++) {
         if (this.res[i].props.children === item.props.children) {
           let del = localStorage.key(i);
@@ -48,7 +45,6 @@ class NameForm extends React.Component {
       else
           this.s = "";
     };
-
 
     render() {
       this.getResult()
@@ -78,7 +74,16 @@ class NameForm extends React.Component {
               </div>
             </div>
           </div>
-          <TodoList removeClick={this.removeClick} res={this.res} />
+            <div className="container-fluid">
+              <div className="row" >
+                <div className="container-fluid">
+                  <div className="row">{this.res.map(todo => {
+                    return (
+                      <Todo key={this.res.indexOf(todo)} todo={todo} res={this.res} removeClick={this.removeClick} />)})}
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       );
   }
