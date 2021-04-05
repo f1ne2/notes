@@ -46,6 +46,8 @@ class NameForm extends React.Component {
           this.s = "";
     };
 
+
+
     render() {
       this.getResult()
       return (
@@ -77,9 +79,8 @@ class NameForm extends React.Component {
             <div className="container-fluid">
               <div className="row" >
                 <div className="container-fluid">
-                  <div className="row">{this.res.map(todo => {
-                    return (
-                      <Todo key={this.res.indexOf(todo)} todo={todo} res={this.res} removeClick={this.removeClick} />)})}
+                  <div className="row">{this.res.map(todo => <Todo key={this.res.indexOf(todo)} todo={todo}
+                                                                   res={this.res} removeClick={this.removeClick} />)}
                   </div>
                 </div>
               </div>
