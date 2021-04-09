@@ -46,8 +46,6 @@ class NameForm extends React.Component {
           this.s = "";
     };
 
-
-
     render() {
       this.getResult()
       return (
@@ -73,7 +71,6 @@ class NameForm extends React.Component {
                    required="True" value={this.state.value} onChange={this.handleChange}/>
           </div>{this.res.map(todo => <Todo key={this.res.indexOf(todo)} todo={todo}
                                             res={this.res} removeClick={this.removeClick} />)}
-
         </div>
       );
   }

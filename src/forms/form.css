@@ -26,7 +26,6 @@
     font-size: 26px;
     text-align: center;
     font-weight: 300;
-    margin-bottom: 10px;
     font-family: 'Montserrat Alternates', Arial, sans-serif;
 }
 .title h2, .title h2 span{
@@ -84,12 +83,13 @@
 
 .block button {
     border: none;
-    background: white;
+    background: inherit;
     font: 14px system-ui;
 }
 
 .notes:hover .block{
-    display:inline-flex;
-    align-items: flex-end;
-    position: relative;
+    display:inline;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 150px;
 }
