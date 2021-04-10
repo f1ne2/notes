@@ -2,6 +2,7 @@ import React from "react";
 import form from "./form.css";
 import Clock from "./Clock";
 import Todo from "./Todo";
+import btn from "./Btn.png"
 
 
 class NameForm extends React.Component {
@@ -59,7 +60,9 @@ class NameForm extends React.Component {
                   <h2>You've got
                     <span className="total__items"> {this.res.length}</span> thing{this.s} to do today!
                   </h2>
-                  <button className="add_btn" onClick={this.handleSubmit}>+</button>
+                  <button className="add_btn" onClick={this.handleSubmit}>
+
+                      <img src={btn} /></button>
                 </div>
             </div>
           </div>
