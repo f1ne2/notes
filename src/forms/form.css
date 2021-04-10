@@ -11,9 +11,8 @@
 
 .main-container {
     width: 100%;
-    min-height: 100%;
-    border-bottom-right-radius: 40%;
-    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
     background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 5%),
     url(https://s7.postimg.org/yap5ueygr/back.png);
     color: #fff;
@@ -32,14 +31,15 @@
 }
 
 .add_btn {
-    border: none;
     background-color: red;
+    border: none;
     border-radius:100%;
     height: 42px;
     width: 42px;
     color: #ffffff;
     font-family: 'Montserrat Alternates', Arial, sans-serif;
     font-size: 32px;
+    margin-bottom: 10px;
 
 }
 

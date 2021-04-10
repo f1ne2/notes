@@ -52,7 +52,6 @@ class NameForm extends React.Component {
         <div>
           <div className="wide">
             <div className="main-container">
-              <div className="top">
                 <div className="title">
                   <h1 id="date">
                     <Clock />
@@ -62,8 +61,6 @@ class NameForm extends React.Component {
                   </h2>
                   <button className="add_btn" onClick={this.handleSubmit}>+</button>
                 </div>
-
-              </div>
             </div>
           </div>
           <div className="add__container">
