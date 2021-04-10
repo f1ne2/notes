@@ -60,8 +60,9 @@ class NameForm extends React.Component {
                   <h2>You've got
                     <span className="total__items"> {this.res.length}</span> thing{this.s} to do today!
                   </h2>
+                  <button className="add_btn" onClick={this.handleSubmit}>+</button>
                 </div>
-                <button className="add_btn" onClick={this.handleSubmit}>+</button>
+
               </div>
             </div>
           </div>
