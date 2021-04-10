@@ -11,9 +11,7 @@
 
 .main-container {
     width: 100%;
-    height:auto;
     min-height: 100%;
-    margin: 0 auto;
     border-bottom-right-radius: 40%;
     border-bottom-left-radius: 40%;
     background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 5%),
