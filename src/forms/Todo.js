@@ -7,12 +7,12 @@ class Todo extends React.Component {
           <div className="todos"><textarea rows="5" cols="12" value={localStorage.getItem
             (localStorage.key(this.props.res.indexOf(this.props.todo)))} readOnly/>
               <div className="block">
-                  <button type="button" onClick={() =>
-                      this.props.removeClick(this.props.todo)}>🗑️
-                  </button>
+                <button type="button" onClick={() =>
+                    this.props.removeClick(this.props.todo)}>
+                    <span>&#215;</span>
+                </button>
               </div>
           </div>
-
         </div>
       );
     }}

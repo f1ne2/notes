@@ -7,9 +7,6 @@
 .wide {
     display: flex;
     text-align: center;
-    overflow: hidden;
-    border-bottom-right-radius: 40%;
-    border-bottom-left-radius: 40%;
 }
 
 .main-container {
@@ -17,6 +14,8 @@
     height:auto;
     min-height: 100%;
     margin: 0 auto;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
     background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 5%),
     url(https://s7.postimg.org/yap5ueygr/back.png);
     color: #fff;
@@ -58,23 +57,46 @@
     color: #939CA7;
 }
 
-.notes {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    margin-left: 25px;
+@media screen and (min-device-width: 543px) {
+    .notes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        margin-left: 25px;
 
+    }
+
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        border-radius: 10%;
+        border-color: transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+    }
 }
 
-.todos textarea {
-    background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
-    url(https://s7.postimg.org/yap5ueygr/back.png);
-    opacity: 0.9;
-    border-radius: 10%;
-    border-color:transparent;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
-    color: white;
+@media screen and (max-device-width: 542px) {
+    .notes {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: column;
+
+    }
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        width: 100%;
+        border-radius: 10%;
+        border-color:transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
 }
 
 .block{
@@ -87,9 +109,13 @@
     font: 14px system-ui;
 }
 
+.block span {
+    font: 150% FreeSerif,Arial; color:red;
+}
+
 .notes:hover .block{
     display:inline;
     position: absolute;
-    margin-left: -40px;
-    margin-top: 150px;
+    margin-left: -30px;
+    margin-top: 15px;
 }
