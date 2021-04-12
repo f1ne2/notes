@@ -38,8 +38,9 @@
 .add__description {
     background-color: #f7f7f7;
     font-family: inherit;
+    height: auto;
     font-size: 20px;
-    padding: 20px 15px 12px;
+    padding: 15px 20px 15px;
     transition: border 0.3s;
     width: 100%;
     border:none;
@@ -47,34 +48,194 @@
     color: #939CA7;
 }
 
-@media screen and (min-device-width: 543px) {
+@media screen and (min-device-width: 2560px) {
     .notes {
         display: inline-flex;
         flex-wrap: wrap;
-        margin-top: 25px;
-        margin-left: 25px;
+        justify-content: space-between;
+        width: 100%;
 
+    }
+
+    .todos {
+        width: 12em;
+        margin: 10px;
+        box-sizing: border-box;
     }
 
     .todos textarea {
         background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
         url(https://s7.postimg.org/yap5ueygr/back.png);
         opacity: 0.9;
+        width: 100%;
         border-radius: 10%;
-        border-color: transparent;
+        border-color:transparent;
         font-family: 'Quicksand', sans-serif;
         font-size: 24px;
         color: white;
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-device-width: 542px) {
+@media screen and (min-device-width: 1920px) and (max-device-width: 2560px){
     .notes {
-        display: flex;
-        margin-top: 25px;
-        flex-direction: column;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
 
     }
+
+    .todos {
+        width: 15em;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        width: 100%;
+        border-radius: 10%;
+        border-color:transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-device-width: 1440px) and (max-device-width: 1920px){
+    .notes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .todos {
+        width: 20em;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        width: 100%;
+        border-radius: 10%;
+        border-color:transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-device-width: 1080px) and (max-device-width: 1440px){
+    .notes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .todos {
+        width: 20em;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        width: 100%;
+        border-radius: 10%;
+        border-color:transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1080px){
+    .notes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+
+    .todos {
+        width: 22em;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        width: 100%;
+        border-radius: 10%;
+        border-color:transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-device-width: 410px) and (max-device-width: 800px){
+    .notes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+
+    .todos {
+        width: 15em;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .todos textarea {
+        background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
+        url(https://s7.postimg.org/yap5ueygr/back.png);
+        opacity: 0.9;
+        width: 100%;
+        border-radius: 10%;
+        border-color:transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-device-width: 540px) {
+    .notes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .todos {
+        width: 100%;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
     .todos textarea {
         background: linear-gradient(to bottom, rgba(51, 51, 255, 0.1) 0%, rgba(12, 51, 242, 0.9) 0%),
         url(https://s7.postimg.org/yap5ueygr/back.png);
@@ -86,7 +247,6 @@
         font-size: 24px;
         color: white;
     }
-
 }
 
 .block{
@@ -100,12 +260,12 @@
 }
 
 .block span {
-    font: 150% FreeSerif,Arial; color:red;
+    font: 225% FreeSerif,Arial; color:white;
 }
 
-.notes:hover .block{
+.todos:hover .block{
     display:inline;
     position: absolute;
-    margin-left: -30px;
-    margin-top: 15px;
+    margin-left: -36px;
+    margin-top: 23px;
 }

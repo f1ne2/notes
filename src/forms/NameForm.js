@@ -67,11 +67,14 @@ class NameForm extends React.Component {
             </div>
           </div>
           <div className="add__container">
-            <input type="text" className="add__description"
+            <input className="add__description"
                    placeholder="What would you like to do today?"
                    required="True" value={this.state.value} onChange={this.handleChange}/>
-          </div>{this.res.map(todo => <Todo key={this.res.indexOf(todo)} todo={todo}
-                                            res={this.res} removeClick={this.removeClick} />)}
+          </div>
+            <div className="notes">
+          {this.res.map(todo => <Todo key={this.res.indexOf(todo)} todo={todo}
+                                          res={this.res} removeClick={this.removeClick} />)}
+            </div>
         </div>
       );
   }
